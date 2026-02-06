@@ -1,0 +1,21 @@
+# ninja log v7
+1	28	7921192893658941	cutlass-populate-prefix/src/cutlass-populate-stamp/cutlass-populate-mkdir	13e59c81f77cba94
+1	28	7921192893658941	C:/vllm-windows/.deps/cutlass-subbuild/cutlass-populate-prefix/src/cutlass-populate-stamp/cutlass-populate-mkdir	13e59c81f77cba94
+28	7424	7921192967621000	cutlass-populate-prefix/src/cutlass-populate-stamp/cutlass-populate-download	8d42690a16f5ddf1
+28	7424	7921192967621000	C:/vllm-windows/.deps/cutlass-subbuild/cutlass-populate-prefix/src/cutlass-populate-stamp/cutlass-populate-download	8d42690a16f5ddf1
+7424	7644	7921192967651003	cutlass-populate-prefix/src/cutlass-populate-stamp/cutlass-populate-update	886b7c8dec726783
+7424	7644	7921192967651003	C:/vllm-windows/.deps/cutlass-subbuild/cutlass-populate-prefix/src/cutlass-populate-stamp/cutlass-populate-update	886b7c8dec726783
+7645	7674	7921192970120147	cutlass-populate-prefix/src/cutlass-populate-stamp/cutlass-populate-patch	6f5787289a54285b
+7645	7674	7921192970120147	C:/vllm-windows/.deps/cutlass-subbuild/cutlass-populate-prefix/src/cutlass-populate-stamp/cutlass-populate-patch	6f5787289a54285b
+7674	7703	7921192970410168	cutlass-populate-prefix/src/cutlass-populate-stamp/cutlass-populate-configure	42b939f1a6bbc09c
+7674	7703	7921192970410168	C:/vllm-windows/.deps/cutlass-subbuild/cutlass-populate-prefix/src/cutlass-populate-stamp/cutlass-populate-configure	42b939f1a6bbc09c
+7703	7732	7921192970700148	cutlass-populate-prefix/src/cutlass-populate-stamp/cutlass-populate-build	4276c5f3e5093666
+7703	7732	7921192970700148	C:/vllm-windows/.deps/cutlass-subbuild/cutlass-populate-prefix/src/cutlass-populate-stamp/cutlass-populate-build	4276c5f3e5093666
+7732	7761	7921192970990147	cutlass-populate-prefix/src/cutlass-populate-stamp/cutlass-populate-install	cfdb106de5a5d47b
+7732	7761	7921192970990147	C:/vllm-windows/.deps/cutlass-subbuild/cutlass-populate-prefix/src/cutlass-populate-stamp/cutlass-populate-install	cfdb106de5a5d47b
+7761	7789	7921192971270143	cutlass-populate-prefix/src/cutlass-populate-stamp/cutlass-populate-test	2635e39c8524854f
+7761	7789	7921192971270143	C:/vllm-windows/.deps/cutlass-subbuild/cutlass-populate-prefix/src/cutlass-populate-stamp/cutlass-populate-test	2635e39c8524854f
+7789	7828	7921192971660148	CMakeFiles/cutlass-populate-complete	a2a9226e840f43dd
+7789	7828	7921192971660148	cutlass-populate-prefix/src/cutlass-populate-stamp/cutlass-populate-done	a2a9226e840f43dd
+7789	7828	7921192971660148	C:/vllm-windows/.deps/cutlass-subbuild/CMakeFiles/cutlass-populate-complete	a2a9226e840f43dd
+7789	7828	7921192971660148	C:/vllm-windows/.deps/cutlass-subbuild/cutlass-populate-prefix/src/cutlass-populate-stamp/cutlass-populate-done	a2a9226e840f43dd

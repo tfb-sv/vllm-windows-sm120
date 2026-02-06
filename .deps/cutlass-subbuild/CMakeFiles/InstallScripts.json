@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/vllm-windows/.deps/cutlass-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
