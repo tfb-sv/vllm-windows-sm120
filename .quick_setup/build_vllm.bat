@@ -8,7 +8,7 @@ reg add HKLM\SYSTEM\CurrentControlSet\Control\FileSystem /v LongPathsEnabled /t 
 
 REM ==== CONFIG ====
 set ENV_NAME=vllm-env
-set MAIN_DIR=C:\Users\Nural\vllm-windows-sm120
+set MAIN_DIR=%~dp0\..
 set CONDA_BAT=%USERPROFILE%\anaconda3\Scripts\activate.bat
 set CUDA_ORIG_DIR=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8
 set CUDNN_ORIG_DIR=C:\Program Files\NVIDIA\CUDNN
@@ -47,9 +47,6 @@ set NVCC_APPEND_FLAGS=--allow-unsupported-compiler
 REM ==== CONDA ====
 call "%CONDA_BAT%"
 call conda activate %ENV_NAME%
-
-REM ==== VERSION OVERRIDE ====
-set SETUPTOOLS_SCM_PRETEND_VERSION "1.0.0.0"
 
 REM ==== BUILD ====
 python use_existing_torch.py
