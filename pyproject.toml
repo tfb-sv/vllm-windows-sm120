@@ -46,9 +46,6 @@ lora_filesystem_resolver = "vllm.plugins.lora_resolvers.filesystem_resolver:regi
 
 [tool.setuptools_scm]
 # no extra settings needed, presence enables setuptools-scm
-write_to = "vllm/_version.py"
-version_scheme = "only-version"
-local_scheme = "no-local-version"
 
 [tool.setuptools.packages.find]
 where = ["."]

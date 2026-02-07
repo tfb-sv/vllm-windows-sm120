@@ -49,7 +49,7 @@ call "%CONDA_BAT%"
 call conda activate %ENV_NAME%
 
 REM ==== VERSION OVERRIDE ====
-REM set SETUPTOOLS_SCM_PRETEND_VERSION "1.0.0"
+set SETUPTOOLS_SCM_PRETEND_VERSION "1.0.0.0"
 
 REM ==== BUILD ====
 python use_existing_torch.py
