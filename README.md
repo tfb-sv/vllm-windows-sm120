@@ -44,7 +44,7 @@ cd vllm-windows-sm120
 .\.quick_setup\build_vllm.bat
 ```
 
-### Install the built wheel
+### 3) Install the built wheel
 
 Use either the wheel from your build:
 
@@ -67,7 +67,7 @@ pip uninstall -y transformers
 pip install "transformers==4.57.3" tokenizers accelerate safetensors huggingface_hub
 ```
 
-### Benchmark
+## Benchmark
 
 ```
 python ".\test\test_benchmark.py"
@@ -76,7 +76,9 @@ python ".\test\test_benchmark.py"
 **Example results:**
 
 > vLLM mean: 45.41 tok/s (min 45.34 / max 45.47)
+
 > Baseline mean: 14.35 tok/s (min 13.66 / max 14.66)
+
 > Speedup: 45.41 / 14.35 ≈ 3.17×
 
 ## Notes
