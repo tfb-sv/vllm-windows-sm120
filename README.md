@@ -76,15 +76,15 @@ python .\test\test_benchmark.py
 ### Example results
 
 ```
-With    vLLM = 45.41 tok/s (min 45.34 / max 45.47)
-Without vLLM = 14.35 tok/s (min 13.66 / max 14.66)
+With    vLLM: 45.41 tok/s (min 45.34 / max 45.47)
+Without vLLM: 14.35 tok/s (min 13.66 / max 14.66)
 
-Speed   Gain = 45.41 / 14.35 ≈ 3.17×
+Speed   Gain: 45.41 / 14.35 ≈ 3.17×
 ```
 
 ## Notes
 - Some packages (e.g. **triton-windows**) are pinned to specific versions, even though other versions may also work.
-- `VLLM_FORCE_FA3_WINDOWS_BUILD=1` (**FlashAttention 3**) is still experimental on **Windows** and will probably kill the build.
+- `VLLM_FORCE_FA3_WINDOWS_BUILD=1` (**FlashAttention-3**) is still experimental on **Windows** and will probably kill the build.
 
 ## Contributing
 Feedback and contributions are highly valued. Issues or suggestions for improvements can be reported by opening an issue.
