@@ -73,13 +73,13 @@ pip install "transformers==4.57.3" tokenizers accelerate safetensors huggingface
 python ".\test\test_benchmark.py"
 ```
 
-**Example results:**
+### Example results
 
-> vLLM mean: 45.41 tok/s (min 45.34 / max 45.47)
+> **vLLM mean:** 45.41 tok/s (min 45.34 / max 45.47)
 
-> Baseline mean: 14.35 tok/s (min 13.66 / max 14.66)
+> **Baseline mean:** 14.35 tok/s (min 13.66 / max 14.66)
 
-> Speedup: 45.41 / 14.35 ≈ 3.17×
+> **Speedup:** 45.41 / 14.35 ≈ **3.17×**
 
 ## Notes
 - Pin dependency versions (especially **Triton** / **triton-windows**). Newer versions may install but can be incompatible.
