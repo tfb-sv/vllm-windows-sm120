@@ -8,11 +8,7 @@
 
 # vLLM for Windows (sm120 / RTX 50xx)
 
-This repository is a fork of **vllm-windows @ v0.11.0** with additional fixes for **CUDA 12.8** source builds and **sm120 (RTX 50xx)** support.
-
-- **Base fork:** [SystemPanic/vllm-windows @ v0.11.0](https://github.com/SystemPanic/vllm-windows/tree/v0.11.0)
-- **Target GPUs:** NVIDIA RTX 50xx (sm120)
-- **Toolchain:** Windows + Visual Studio + CUDA 12.8 + cuDNN 9.19
+This repository is a fork of [SystemPanic/vllm-windows @ v0.11.0](https://github.com/SystemPanic/vllm-windows/tree/v0.11.0) with additional fixes for **CUDA 12.8** source builds and **sm120 (RTX 50xx)** support.
 
 > **NOTE:** This is an unofficial community fork. For the upstream project, see the official vLLM repository.
 
