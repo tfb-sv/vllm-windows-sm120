@@ -10,7 +10,7 @@
 
 This repository is a fork of [SystemPanic/vllm-windows @ v0.11.0](https://github.com/SystemPanic/vllm-windows/tree/v0.11.0) with additional fixes for **CUDA 12.8** source builds and **sm120 (RTX 50xx)** support.
 
-> **NOTE:** This is an unofficial community fork. For the upstream project, see the official vLLM repository.
+> **NOTE:** This is an unofficial community fork. For the upstream project, see [the official vLLM repository](https://github.com/vllm-project/vllm).
 
 ## Prerequisites
 Install the following:
@@ -75,15 +75,15 @@ python .\test\test_benchmark.py
 
 ### Example results
 
-> **With    vLLM:** 45.41 tok/s (min 45.34 / max 45.47)
-
-> **Without vLLM:** 14.35 tok/s (min 13.66 / max 14.66)
-
-> **Speed   Gain:** 45.41 / 14.35 ≈ **3.17×**
+```
+**With    vLLM:** 45.41 tok/s (min 45.34 / max 45.47)
+**Without vLLM:** 14.35 tok/s (min 13.66 / max 14.66)
+**Speed   Gain:** 45.41 / 14.35 ≈ **3.17×**
+```
 
 ## Notes
 - Pin dependency versions (especially **Triton** / **triton-windows**). Newer versions may install but can be incompatible.
-- `VLLM_FORCE_FA3_WINDOWS_BUILD=1` (FA3) is experimental on Windows and may break the build in this fork.
+- `VLLM_FORCE_FA3_WINDOWS_BUILD=1` (**FlastAttention-3**) is experimental on Windows and may break the build.
 
 ## Contributing
 Feedback and contributions are highly valued. Issues or suggestions for improvements can be reported by opening an issue.
