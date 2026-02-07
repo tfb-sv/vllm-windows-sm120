@@ -10,13 +10,13 @@ REM ==== CONFIG ====
 set ENV_NAME=vllm-env
 set MAIN_DIR=C:\Users\Nural\vllm-windows-sm120
 set CONDA_BAT=%USERPROFILE%\anaconda3\Scripts\activate.bat
-set CUDA_ORIG_PATH=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8
-set CUDNN_ORIG_PATH=C:\Program Files\NVIDIA\CUDNN
-set VS_PATH=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvarsall.bat
+set CUDA_ORIG_DIR=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.8
+set CUDNN_ORIG_DIR=C:\Program Files\NVIDIA\CUDNN
+set VS_DIR=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvarsall.bat
 
 REM ==== INIT ====
 cd /d "%MAIN_DIR%"
-call "%VS_PATH%" x64
+call "%VS_DIR%" x64
 
 REM ==== BUILD ENV ====
 set DISTUTILS_USE_SDK=1
@@ -25,7 +25,7 @@ set MAX_JOBS=12
 
 REM ==== CUDA LINK ====
 if not exist C:\CUDA (
-    mklink /J C:\CUDA "%CUDA_ORIG_PATH%"
+    mklink /J C:\CUDA "%CUDA_ORIG_DIR%"
 )
 set CUDA_PATH=C:\CUDA
 set CUDA_HOME=C:\CUDA
@@ -33,7 +33,7 @@ set PATH=%CUDA_HOME%\bin;%PATH%
 
 REM ==== CUDNN LINK ====
 if not exist C:\CUDNN (
-    mklink /J C:\CUDNN "%CUDNN_ORIG_PATH%"
+    mklink /J C:\CUDNN "%CUDNN_ORIG_DIR%"
 )
 set USE_CUDNN=1
 set CUDNN_LIBRARY_PATH=C:\CUDNN\v9.19\lib\12.9\x64
@@ -41,7 +41,6 @@ set CUDNN_INCLUDE_PATH=C:\CUDNN\v9.19\include\12.9
 
 REM ==== CUDA / TORCH ====
 set TORCH_CUDA_ARCH_LIST=12.0
-set VLLM_FORCE_FA3_WINDOWS_BUILD=1
 set NVCC=nvcc
 set NVCC_APPEND_FLAGS=--allow-unsupported-compiler
 
