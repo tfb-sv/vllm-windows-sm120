@@ -17,7 +17,7 @@ authors = [{name = "vLLM Team"}]
 license = "Apache-2.0"
 license-files = ["LICENSE"]
 readme = "README.md"
-description = "A high-throughput and memory-efficient inference and serving engine for LLMs"
+description = "A high-throughput and memory-efficient inference and serving engine for LLMs with SM120 support"
 classifiers = [
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
@@ -46,6 +46,9 @@ lora_filesystem_resolver = "vllm.plugins.lora_resolvers.filesystem_resolver:regi
 
 [tool.setuptools_scm]
 # no extra settings needed, presence enables setuptools-scm
+write_to = "vllm/_version.py"
+version_scheme = "only-version"
+local_scheme = "no-local-version"
 
 [tool.setuptools.packages.find]
 where = ["."]

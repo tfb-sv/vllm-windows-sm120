@@ -48,6 +48,9 @@ REM ==== CONDA ====
 call "%CONDA_BAT%"
 call conda activate %ENV_NAME%
 
+REM ==== VERSION OVERRIDE ====
+REM set SETUPTOOLS_SCM_PRETEND_VERSION "1.0.0"
+
 REM ==== BUILD ====
 python use_existing_torch.py
 
@@ -57,6 +60,7 @@ pip install -r requirements/windows.txt
 rmdir /s /q build 2>nul
 rmdir /s /q .deps 2>nul
 
-pip install . --no-build-isolation
+pip wheel . -w dist --no-build-isolation
+REM pip install . --no-build-isolation
 
 pause

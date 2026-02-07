@@ -1,0 +1,6 @@
+[35m.buildkite/pyproject.toml[m[36m:[m[32m13[m[36m:[m"vllm/[1;31m_version.py[m" = ["ALL"]
+[35mbenchmarks/pyproject.toml[m[36m:[m[32m13[m[36m:[m"vllm/[1;31m_version.py[m" = ["ALL"]
+[35mexamples/pyproject.toml[m[36m:[m[32m18[m[36m:[m"vllm/[1;31m_version.py[m" = ["ALL"]
+[35mgitignore.txt[m[36m:[m[32m2[m[36m:[m/vllm/[1;31m_version.py[m
+[35mpyproject.toml[m[36m:[m[32m69[m[36m:[m"vllm/[1;31m_version.py[m" = ["ALL"]
+[35msetup.py[m[36m:[m[32m585[m[36m:[m    version = get_version(write_to="vllm/[1;31m_version.py[m")
