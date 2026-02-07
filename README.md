@@ -32,51 +32,58 @@ Open **Anaconda Prompt**.
 
 Pick your environment name:
 
-```powershell
+```
 conda create -n vllm-env python=3.12 -y
 conda activate vllm-env
 
-pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu128```
+pip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu128
+```
 
 ### 2) Build the vLLM wheel
 
 Customize the build script if needed: `.quick_setup\build_vllm.bat`
 
-```powershell
+```
 cd vllm-windows-sm120
-.\.quick_setup\build_vllm.bat```
+.\.quick_setup\build_vllm.bat
+```
 
 ### Install the built wheel
 
 Use either the wheel from your build:
 
-```powershell
-pip install ".\dist\vllm-*.whl"```
+```
+pip install ".\dist\vllm-*.whl"
+```
 
 Or the wheel from this repository:
 
-```powershell
-pip install "C:\Users\%USERNAME%\Downloads\vllm-*.whl"```
+```
+pip install "C:\Users\%USERNAME%\Downloads\vllm-*.whl"
+```
 
 ## Running Models
 
 Some models may require specific library versions. For example, if you run into compatibility issues with **Qwen**, you can pin a known working `transformers` version:
 
-```powershell
+```
 pip uninstall -y transformers
-pip install "transformers==4.57.3" tokenizers accelerate safetensors huggingface_hub```
+pip install "transformers==4.57.3" tokenizers accelerate safetensors huggingface_hub
+```
 
 ### Benchmark
 
-```powershell
-python ".\test\test_benchmark.py"```
+```
+python ".\test\test_benchmark.py"
+```
 
 **Example results (your numbers may vary):**
 
-```powershell
+```
 vLLM mean: 45.41 tok/s (min 45.34 / max 45.47)
 Baseline mean: 14.35 tok/s (min 13.66 / max 14.66)
-Speedup: 45.41 / 14.35 ≈ 3.17×```
+Speedup: 45.41 / 14.35 ≈ 3.17×
+```
 
 ## Notes
 - Pin dependency versions (especially **Triton** / **triton-windows**). Newer versions may install but can be incompatible.
