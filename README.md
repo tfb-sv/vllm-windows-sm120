@@ -76,9 +76,10 @@ python .\test\test_benchmark.py
 ### Example results
 
 ```
-**With    vLLM:** 45.41 tok/s (min 45.34 / max 45.47)
-**Without vLLM:** 14.35 tok/s (min 13.66 / max 14.66)
-**Speed   Gain:** 45.41 / 14.35 ≈ **3.17×**
+With    vLLM: 45.41 tok/s (min 45.34 / max 45.47)
+Without vLLM: 14.35 tok/s (min 13.66 / max 14.66)
+
+Speed   Gain: 45.41 / 14.35 ≈ 3.17×
 ```
 
 ## Notes
