@@ -15,7 +15,7 @@ This repository is a fork of [SystemPanic/vllm-windows @ v0.11.0](https://github
 ## Prerequisites
 Install the following:
 
-- [Visual Studio Community](https://visualstudio.microsoft.com/downloads/) (Desktop development with C++)
+- [Visual Studio 2022 Community](https://visualstudio.microsoft.com/downloads/) (Desktop development with C++)
 - [CUDA 12.8](https://developer.nvidia.com/cuda-12-8-0-download-archive)
 - [cuDNN 9.19.0](https://developer.nvidia.com/cudnn-9-19-0-download-archive)
 - [Anaconda](https://www.anaconda.com/download)
